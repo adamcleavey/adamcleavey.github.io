@@ -7,11 +7,27 @@
 		p {
 			font: -apple-system-body;
 		}
+		:root {
+  			color-scheme: light dark;
+  			/* light-mode defaults */
+  			background: #fff;
+  			color:      #000;
+		}
+		@media (prefers-color-scheme: dark) {
+  			:root {
+    			background: #000;
+    			color:      #fff;
+  			}
+		}
+		body {
+  			background: var(--bg, inherit);
+  			color:      var(--fg, inherit);
+		}
 	</style>
 </head>
 <body id="index">
 	<p>This is Adam Levy's website.</p>
-	<p>Adam works at <a href="https://www.squarespace.com">Squarespace</a>, which according to podcasts is a website where you can build your own website. He's a Product Manager there.</p> 
+	<p>Adam works at <a href="https://www.squarespace.com">Squarespace</a>, which, according to podcasts, is a website where you can build your own website. He's a Product Manager there.</p> 
 	<p>He previously worked as a Product Manager at <a href="https://www.bloomberg.com" target="_blank">Bloomberg</a>, a semi-popular website for people who wear suits.</p>
 	<p>Before that, he worked at <a href="http://washingtonpost.com" target="_blank">The Washington Post</a>, another website. </p>
 	<p>He is also a contributing developer with the team at <a href="https://www.leveler.info" target="_blank">leveler.info</a>, a platform for helping people whose business was affected by COVID-19. He recommends you give your available money to them.</p>

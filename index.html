@@ -3,9 +3,12 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Adam Levy | adamklevy.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 	<style type="text/css">
 		p {
-			font: -apple-system-body;
+			font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 		}
 		body {
   			color-scheme: light dark;
@@ -17,6 +20,11 @@
     			background: black;
     			color:      white;
   			}
+		}
+		@media (prefers-contrast: more) {
+  			p {
+				font-weight: bold;
+			}
 		}
 	</style>
 </head>

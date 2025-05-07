@@ -7,21 +7,16 @@
 		p {
 			font: -apple-system-body;
 		}
-		:root {
+		body {
   			color-scheme: light dark;
-  			/* light-mode defaults */
-  			background: #fff;
-  			color:      #000;
+  			background: white;
+  			color:      black;
 		}
 		@media (prefers-color-scheme: dark) {
-  			:root {
-    			background: #000;
-    			color:      #fff;
+  			body {
+    			background: black;
+    			color:      white;
   			}
-		}
-		body {
-  			background: var(--bg, inherit);
-  			color:      var(--fg, inherit);
 		}
 	</style>
 </head>
